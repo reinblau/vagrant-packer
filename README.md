@@ -1,7 +1,7 @@
 vagrant-packer
 ==============
 
-http://www.packer.io/ script to build a basebox for http://www.vagrantup.com to run on https://www.virtualbox.org .
+http://www.packer.io/ script to build a basebox for http://www.vagrantup.com.
 
 ----------
 HOW TO USE
@@ -24,4 +24,7 @@ HOW TO USE
  
  - Run the command
    ``/pathToPacker/packer build dockerbase.json``
- - After the packer is ready it creates a file called *packer_virtualbox-iso_virtualbox.box* 
+ 
+ - After the packer is ready it creates a file called *packer_virtualbox-iso_virtualbox.box* which can be used in vagrant
+ 
+ - Example usage for vagrant is to create a docker host. See https://github.com/reinblau/vagrant-docker for more information.
