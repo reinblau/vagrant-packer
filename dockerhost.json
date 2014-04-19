@@ -1,6 +1,6 @@
 {
   "builders": [{
-      "vm_name": "dockerbase",
+      "vm_name": "dockerhost",
       "type": "virtualbox-iso",
       "guest_os_type": "Debian_64",
       "iso_url": "debian-7.4.0-amd64-netinst.iso",
@@ -11,9 +11,9 @@
       "headless": false,
       "disk_size": "100000",
       "http_directory": "http",
+      "ssh_username": "vagrant",
       "ssh_password": "vagrant",
       "ssh_port": 22,
-      "ssh_username": "vagrant",
       "shutdown_command": "echo 'vagrant' | sudo -S shutdown -h now",
       "boot_command" : [
         "<esc> ",
@@ -23,7 +23,7 @@
         "auto ",
         "locale=de_DE ",
         "kbd-chooser/method=de ",
-        "netcfg/get_hostname=dockerbase.vm ",
+        "netcfg/get_hostname=dockerhost.vm ",
         "netcfg/get_domain=reinblau.de ",
         "fb=false ",
         "debconf/frontend=noninteractive ",
