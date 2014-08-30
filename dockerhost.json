@@ -1,10 +1,10 @@
 {
   "builders": [{
-      "vm_name": "dockerhost",
+      "vm_name": "debian-7.6.0",
       "type": "virtualbox-iso",
       "guest_os_type": "Debian_64",
-      "iso_url": "debian-7.4.0-amd64-netinst.iso",
-      "iso_checksum": "e7e9433973f082a297793c3c5010b2c5",
+      "iso_url": "debian-7.6.0-amd64-netinst.iso",
+      "iso_checksum": "8a3c2ad7fd7a9c4c7e9bcb5cae38c135",
       "iso_checksum_type": "md5",
       "boot_wait": "4s",
       "guest_additions_mode": "disable",
@@ -23,7 +23,7 @@
         "auto ",
         "locale=de_DE ",
         "kbd-chooser/method=de ",
-        "netcfg/get_hostname=dockerhost.vm ",
+        "netcfg/get_hostname=dockerhost.dev ",
         "netcfg/get_domain=reinblau.de ",
         "fb=false ",
         "debconf/frontend=noninteractive ",
