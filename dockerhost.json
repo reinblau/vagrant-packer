@@ -1,21 +1,7 @@
 {
-  "builders": [{
-      "vm_name": "debian-7.6.0",
-      "type": "virtualbox-iso",
-      "guest_os_type": "Debian_64",
-      "iso_url": "debian-7.6.0-amd64-netinst.iso",
-      "iso_checksum": "8a3c2ad7fd7a9c4c7e9bcb5cae38c135",
-      "iso_checksum_type": "md5",
-      "boot_wait": "4s",
-      "guest_additions_mode": "disable",
-      "headless": false,
-      "disk_size": "100000",
-      "http_directory": "http",
-      "ssh_username": "vagrant",
-      "ssh_password": "vagrant",
-      "ssh_port": 22,
-      "shutdown_command": "echo 'vagrant' | sudo -S shutdown -h now",
-      "boot_command" : [
+  "builders": [
+    {
+      "boot_command": [
         "<esc> ",
         "install ",
         "preseed/url=http://{{ .HTTPIP }}:{{ .HTTPPort }}/preseed.cfg ",
@@ -31,8 +17,24 @@
         "console-keymaps-at/keymap=de ",
         "keyboard-configuration/xkb-keymap=de ",
         "<enter>"
-     ]
-  }],
+      ],
+      "boot_wait": "4s",
+      "disk_size": "100000",
+      "guest_additions_mode": "disable",
+      "guest_os_type": "Debian_64",
+      "headless": false,
+      "http_directory": "http",
+      "iso_checksum": "0b31bccccb048d20b551f70830bb7ad0",
+      "iso_checksum_type": "md5",
+      "iso_url": "debian-7.7.0-amd64-netinst.iso",
+      "shutdown_command": "echo 'vagrant' | sudo -S shutdown -h now",
+      "ssh_password": "vagrant",
+      "ssh_port": 22,
+      "ssh_username": "vagrant",
+      "type": "virtualbox-iso",
+      "vm_name": "debian-7.7.0"
+    }
+  ],
   "post-processors": [
     "vagrant"
   ],
