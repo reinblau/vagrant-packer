@@ -17,7 +17,7 @@ HOW TO USE
   ``git clone https://github.com/reinblau/vagrant-packer.git``
  - Or [download](https://github.com/reinblau/vagrant-packer/archive/master.zip "Direct link: vagrant-packer Download") it into the directory *packer_build* and unzip the download and renamed the directory into *vagrant-packer*
 
- - [Download]( http://cdimage.debian.org/debian-cd/7.6.0/amd64/iso-cd/debian-7.6.0-amd64-netinst.iso "Debian 7.6.0 ISO-Image Download") Debian 7.6.0 into the directory *vagrant-packer*
+ - [Download]( http://cdimage.debian.org/debian-cd/7.8.0/amd64/iso-cd/debian-7.8.0-amd64-netinst.iso "Debian 7.8.0 ISO-Image Download") Debian 7.8.0 into the directory *vagrant-packer*
 
  - Navigate into the *vagrant-packer* directory
 

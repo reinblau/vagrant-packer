@@ -7,7 +7,7 @@ apt-get -y clean
 # Removing leftover leases and persistent rules
 echo "cleaning up dhcp leases"
 rm /var/lib/dhcp/*
-
+rm -rf /var/lib/apt/lists/*
 # Make sure Udev doesn't block our network
 echo "cleaning up udev rules"
 mkdir /etc/udev/rules.d/70-persistent-net.rules

@@ -2,11 +2,6 @@
 
 set -e
 
-# Update the box
-apt-get update
-apt-get -y upgrade
-apt-get -y install curl
-
 # Tweak sshd to prevent DNS resolution (speed up logins)
 echo 'UseDNS no' >> /etc/ssh/sshd_config
 
@@ -25,4 +20,3 @@ GRUB_CMDLINE_LINUX="debian-installer=de_DE cgroup_enable=memory swapaccount=1"
 EOF
 
 update-grub
-
