@@ -14,3 +14,6 @@ echo 'vagrant ALL=(ALL) NOPASSWD:ALL' > /etc/sudoers.d/99_vagrant
 chmod 440 /etc/sudoers.d/99_vagrant
 # vagrant prefers no tty
 echo "Defaults !requiretty" >> /etc/sudoers
+
+# Fix warning "stdin: is not a tty": https://github.com/mitchellh/vagrant/issues/1673
+sed -i 's/^mesg n$/tty -s \&\& mesg n/g' /root/.profile
