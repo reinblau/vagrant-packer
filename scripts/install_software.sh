@@ -1,4 +1,5 @@
 #!/bin/bash
+set -o errexit -o nounset -o pipefail
 
 echo "Installing Docker from get.docker.com"
 echo "------------------------------------"
