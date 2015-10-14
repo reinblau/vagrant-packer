@@ -1,13 +1,15 @@
 #!/bin/bash
 # Clean up
-set -o errexit -o nounset -o pipefail
+set -o errexit -o nounset
 
+apt-get -y remove linux-headers-$(uname -r) build-essential
 apt-get -y autoremove
 apt-get -y clean
 
 # Removing leftover leases and persistent rules
 echo "cleaning up dhcp leases"
 rm /var/lib/dhcp/*
+rm -rf /tmp/*
 rm -rf /var/lib/apt/lists/*
 # Make sure Udev doesn't block our network
 echo "cleaning up udev rules"

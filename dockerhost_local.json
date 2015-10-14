@@ -66,15 +66,6 @@
     {
       "type": "vagrant",
       "keep_input_artifact": false
-    },
-    {
-      "type": "atlas",
-      "only": ["virtualbox-iso"],
-      "artifact": "tobiasb/dockerhost-dev",
-      "artifact_type": "vagrant.box",
-      "metadata": {
-        "provider": "virtualbox"
-      }
     }
   ]]
 }

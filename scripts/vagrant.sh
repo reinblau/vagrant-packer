@@ -1,6 +1,6 @@
 #!/bin/bash
 # Set up Vagrant.
-set -o errexit -o nounset -o pipefail
+set -o errexit -o nounset
 
 # Install vagrant keys
 mkdir -pm 700 /home/vagrant/.ssh
