@@ -27,7 +27,7 @@
         "<enter>"
       ],
       "boot_wait": "10s",
-      "disk_size": "20000",
+      "disk_size": "50000",
       "guest_additions_mode": "upload",
       "guest_os_type": "Debian_64",
       "headless": false,
@@ -40,11 +40,6 @@
       "vm_name": "debian-{{user `debian_version`}}"
     }
   ],
-  "push": {
-    "name": "tobiasb/dockerhost-dev",
-    "base_dir": ".",
-    "vcs": true
-  },
   "provisioners": [
     {
       "type": "shell",
