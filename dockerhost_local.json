@@ -1,12 +1,12 @@
 {
   "variables": {
-    "debian_version": "8.3.0",
+    "debian_version": "8.7.1",
     "box_version": "1.0.0"
   },
   "builders": [
     {
       "type": "virtualbox-iso",
-      "iso_checksum": "dd25bcdde3c6ea5703cc0f313cde621b13d42ff7d252e2538a11663c93bf8654",
+      "iso_checksum": "749a15b7690769dd99e85d6104182a03d370b04b36106ec7cfaf6a551aa89fb4",
       "iso_checksum_type": "sha256",
       "iso_url": "http://cdimage.debian.org/cdimage/release/current/amd64/iso-cd/debian-{{user `debian_version`}}-amd64-netinst.iso",
       "boot_command": [

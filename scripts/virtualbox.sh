@@ -10,7 +10,6 @@ if test -f .vbox_version ; then
   apt-get -y install --no-install-recommends libdbus-1-3
 
   # Install the VirtualBox guest additions
-  VBOX_VERSION=$(cat .vbox_version)
   VBOX_ISO=VBoxGuestAdditions.iso
   mkdir /tmp/isomount
   mount -o loop $VBOX_ISO /tmp/isomount
@@ -23,5 +22,4 @@ if test -f .vbox_version ; then
   rm $VBOX_ISO
 
   # Symlink vbox guest additions. Fix for https://github.com/mitchellh/vagrant/issues/3341
-  ln -s /opt/VBoxGuestAdditions-$VBOX_VERSION/lib/VBoxGuestAdditions /usr/lib/VBoxGuestAdditions
 fi
