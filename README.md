@@ -23,6 +23,14 @@ HOW TO USE
 
  - Run the command
 
-   ``packer build dockerhost_local.json``
+  ``packer build dockerhost_local.json``
 
  - After the packer is ready it creates a file called *packer_virtualbox-iso_virtualbox.box* which can be used in vagrant
+
+ - Add the box to vagrant
+
+  ``vagrant box add --name=docker packer_virtualbox-iso_virtualbox.box``
+
+ - Start new vagrant box
+
+   ``vagrant up``
