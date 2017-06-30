@@ -1,18 +1,18 @@
 {
   "variables": {
-    "debian_version": "8.7.1",
+    "debian_version": "9.0.0",
     "box_version": "1.0.0"
   },
   "builders": [
     {
       "type": "virtualbox-iso",
-      "iso_checksum": "749a15b7690769dd99e85d6104182a03d370b04b36106ec7cfaf6a551aa89fb4",
+      "iso_checksum": "9d98f339016dc2a3998881949a8f0678baede26b5106f18ef1168d7e13606773",
       "iso_checksum_type": "sha256",
       "iso_url": "http://cdimage.debian.org/cdimage/release/current/amd64/iso-cd/debian-{{user `debian_version`}}-amd64-netinst.iso",
       "boot_command": [
         "<esc> ",
         "install ",
-        "preseed/url=http://{{ .HTTPIP }}:{{ .HTTPPort }}/jessie.preseed.cfg ",
+        "preseed/url=http://{{ .HTTPIP }}:{{ .HTTPPort }}/preseed.cfg ",
         "debian-installer=de_DE ",
         "auto ",
         "locale=de_DE ",
