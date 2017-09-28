@@ -6,8 +6,8 @@ vagrant-packer
 ------------
 Requirements
 ------------
-* Installed [Virtualbox](https://www.virtualbox.org/wiki/Downloads, "Virtualbox download page") (tested with 5.1.22-115126)
-* Installed [Packer](http://www.packer.io/downloads.html "Packer.io Download page") (tested with v1.0.0)
+* Installed [Virtualbox](https://www.virtualbox.org/wiki/Downloads, "Virtualbox download page") (tested with 5.1.28 r117968)
+* Installed [Packer](http://www.packer.io/downloads.html "Packer.io Download page") (tested with 1.1.0)
 
 ----------
 HOW TO USE
