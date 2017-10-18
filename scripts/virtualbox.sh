@@ -15,10 +15,6 @@ if test -f .vbox_version ; then
   mount -o loop $VBOX_ISO /tmp/isomount
   yes|sh /tmp/isomount/VBoxLinuxAdditions.run
   umount /tmp/isomount
-
-  # Start the newly build driver
-  /etc/init.d/vboxadd start
-
   rm $VBOX_ISO
 
   # Symlink vbox guest additions. Fix for https://github.com/mitchellh/vagrant/issues/3341

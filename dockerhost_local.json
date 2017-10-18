@@ -1,13 +1,13 @@
 {
   "variables": {
-    "debian_version": "9.1.0",
+    "debian_version": "9.2.1",
     "box_version": "1.0.0"
   },
   "builders": [
     {
       "type": "virtualbox-iso",
-      "iso_checksum_url": "http://cdimage.debian.org/cdimage/release/current/amd64/iso-cd/SHA256SUMS",
       "iso_checksum_type": "sha256",
+      "iso_checksum": "ec78bc48b48d676775b60eda41528ec33c151c2ce7414a12b13d9b73d34de544",
       "iso_url": "http://cdimage.debian.org/cdimage/release/current/amd64/iso-cd/debian-{{user `debian_version`}}-amd64-netinst.iso",
       "boot_command": [
         "<esc> ",
